@@ -5,18 +5,8 @@ import React, {
     useState,
   } from "react";
   
-  interface Props {
-    delay?: number;
-    transitionDuration?: number;
-    wrapperTag?: JSXElementConstructor<any>;
-    childTag?: JSXElementConstructor<any>;
-    className?: string;
-    childClassName?: string;
-    visible?: boolean;
-    onComplete?: () => any;
-  }
   
-  export default function FadeIn(props: PropsWithChildren<Props>) {
+  export default function FadeIn(props) {
     const [maxIsVisible, setMaxIsVisible] = useState(0);
     const transitionDuration = props.transitionDuration || 400;
     const delay = props.delay || 50;

@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {
   Main,
-  // Timeline,
   Expertise,
-  // Project,
-  // Contact,
+  History,
+  Project,
+  Contact,
   NavBar,
   // Footer,
   FadeIn
@@ -22,9 +22,9 @@ function App() {
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>
-            {/* <Timeline/>
+            <History/>
             <Project/>
-            <Contact/> */}
+            <Contact/>
         </FadeIn>
         {/* <Footer /> */}
     </div>

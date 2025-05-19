@@ -1,0 +1,134 @@
+form {
+  width: 100% !important;
+  padding-top: 20px;
+  font-family: "DomaineDispNar-Medium", sans-serif;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  float: right;
+  background-color: white;
+  color: #050f0b;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #050f0b;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5000ca;
+  color: white;
+}
+
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Optional styling for validation errors */
+span {
+  color: red;
+  font-size: 0.875rem;
+}
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fadeInScale 0.3s ease-in-out;
+}
+
+.modal-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.modal-box p {
+  font-size: 1rem;
+}
+
+/* Optional animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Ensure modal text is black */
+.modal-box,
+.modal-box * {
+  color: black !important;
+}
+/* Style the modal close button like the Send button */
+.modal-close-button {
+  margin-top: 20px;
+  background-color: white;
+  color: #050f0b;
+  border: 2px solid #5000ca;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background-color: #5000ca;
+  color: white;
+}
