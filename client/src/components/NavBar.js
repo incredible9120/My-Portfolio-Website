@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import ApiIcon from '@mui/icons-material/Api';
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -88,7 +88,7 @@ function NavBar() {
           >
             <MenuIcon />
           </IconButton>
-          <DarkModeIcon />
+          <ApiIcon />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
